@@ -7,12 +7,12 @@ Gem::Specification.new do |s|
   s.description = 'TODO: Add (optional) gem description here'
   s.required_ruby_version = '>= 1.9.3'
 
-  spec.authors       = ["Adilson Carvalho", "Marco Carvalho", "Leonardo Saraiva"]
-  spec.email         = ["adilson@adilsoncarvalho.com.br", "marco.carvalho.swasthya@gmail.com", "vyper@maneh.org"]
-  spec.description   = %q{Spree Moip support}
-  spec.summary       = %q{Spree Moip support}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+  s.authors       = ["Adilson Carvalho", "Marco Carvalho", "Leonardo Saraiva"]
+  s.email         = ["adilson@adilsoncarvalho.com.br", "marco.carvalho.swasthya@gmail.com", "vyper@maneh.org"]
+  s.description   = %q{Spree Moip support}
+  s.summary       = %q{Spree Moip support}
+  s.homepage      = ""
+  s.license       = "MIT"
 
   s.files       = `git ls-files`.split("\n")
   s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   s.add_dependency 'spree_core', '~> 2.1.1'
+  s.add_dependency 'moip'
 
   s.add_development_dependency 'capybara', '~> 2.1'
   s.add_development_dependency 'coffee-rails'
