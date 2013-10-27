@@ -1,29 +1,40 @@
-# SpreeMoip
+SpreeMoip
+=========
 
-TODO: Write a gem description
+Introduction goes here.
 
-## Installation
+Installation
+------------
 
-Add this line to your application's Gemfile:
+Add spree_moip to your Gemfile:
 
-    gem 'spree_moip'
+```ruby
+gem 'spree_moip'
+```
 
-And then execute:
+Bundle your dependencies and run the installation generator:
 
-    $ bundle
+```shell
+bundle
+bundle exec rails g spree_moip:install
+```
 
-Or install it yourself as:
+Testing
+-------
 
-    $ gem install spree_moip
+Be sure to bundle your dependencies and then create a dummy test app for the specs to run against.
 
-## Usage
+```shell
+bundle
+bundle exec rake test_app
+bundle exec rspec spec
+```
 
-TODO: Write usage instructions here
+When testing your applications integration with this extension you may use it's factories.
+Simply add this require statement to your spec_helper:
 
-## Contributing
+```ruby
+require 'spree_moip/factories'
+```
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Copyright (c) 2013 [name of extension creator], released under the New BSD License

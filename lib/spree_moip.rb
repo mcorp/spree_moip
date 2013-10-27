@@ -1,5 +1,2 @@
-require "spree_moip/version"
-
-module SpreeMoip
-  # Your code goes here...
-end
+require 'spree_core'
+require 'spree_moip/engine'
